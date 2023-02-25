@@ -13,6 +13,7 @@ In the fasttext model, there are 33 words learned. This includes the 20 amino ac
 
 Regarding the latent space, each word vector is represented as a 100 dimensional array. 
 ![image](https://user-images.githubusercontent.com/67357603/221338778-3c8d55b9-221f-4a93-b570-16865e9469b6.png)
+
 Sentences are made up of multiple amino acid words, such as "M A G L T", etc. 
 
 fastText includes a method for getting the nearest neighbor words, given an input word, based on word vector similarity. 
