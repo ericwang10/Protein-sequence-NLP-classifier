@@ -1,13 +1,7 @@
 # Protein-sequence-NLP-classifier
 Utilizes fastText, a NLP library, to train a classification model on protein sequence vs function. Further analysis on the latent space of the model dictionary
 
-## data preprocessing
-
-
-## training
-
-## model testing
-
+# analysis
 ## model dictionary + latent space analysis 
 In the fasttext model, there are 33 words learned. This includes the 20 amino acids and the word "X", which denotes an unknown amino acid. U, B and other words are also included due to incomplete data filtering (TODO: remove excess words). 
 
@@ -53,5 +47,20 @@ Multiple next steps are needed to improve upon the project. The biggest improvem
 With more test data and multiple different types of proteins, the model should have a better and more general inference of amino acid structure and chemical nature. There may be unseen biases in utilizing only these specific protein functionalities. For example, training on only intermembrane transport proteins will result in the model learning about hydrophobicity of amino acids, while potentially losing information about how certain amino acids act as docking sites/receptors (eg serine/threonine) 
 
 dimensionality reduction and other visualization techniques will be implemented to better visualize how different amino acids cluster together in terms of similarity. 
+
+Adjusting the word n-grams should also improve performance, as the word order of an amino acid sequence is extremely important. In fact, this is called the primary structure, which completely dictates how a protein will fold. 
+As an example, 2 word n-grams for the sentence "Hi I am Eric" would be "Hi I", "I am", and "am Eric". Word n-grams are very important in providing context into predicting the next word in the sequence. 
+In terms of a protein sequence, having higher word n-grams would allow the model to capture higher order features or protein motifs. Examples include a zinc finger, a 4 amino acid motif, omega loops, etc. These in turn have an effect on how the protein behaves structurally.    
+
+# training information
+
+## data preprocessing
+
+
+## training
+
+## model testing
+
+
 
 
