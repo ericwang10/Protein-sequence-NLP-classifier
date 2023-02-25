@@ -43,9 +43,11 @@ For reference, here are the molecular structures of D, Q and E
 
 In this case, the amino acids share similar structural features, as well as similar molecular charges as D and E are both negatively charged. 
 
-This highlights interesting structural features that are preserved within the data, such as cyclical molecules. Without knowing anything about biochemistry, the NLP model is able to infer structural, chemical, and molecular similarities between amino acids. 
+This highlights how structural features and other hidden information are preserved within the data, such as cyclical molecules. As a refresher, the NLP model is only trained on amino acid sequences and a protein function label. 
 
-## improvements
+Without knowing anything about biochemistry, the NLP model is able to infer structural, chemical, and molecular similarities between amino acids. 
+
+## improvements and next steps
 Multiple next steps are needed to improve upon the project. The biggest improvement will be better filtering and pre-processing techniques to reduce the model dictionary count for a more accurate reflection of the actual world (reducing 33 words to 20 to represent the amino acids). 
 
 With more test data and multiple different types of proteins, the model should have a better and more general inference of amino acid structure and chemical nature. There may be unseen biases in utilizing only these specific protein functionalities. For example, training on only intermembrane transport proteins will result in the model learning about hydrophobicity of amino acids, while potentially losing information about how certain amino acids act as docking sites/receptors (eg serine/threonine) 
