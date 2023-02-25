@@ -29,7 +29,7 @@ For reference, here are the molecular structures of Y, W, and F:
 ![image](https://user-images.githubusercontent.com/67357603/221339044-1f61c261-e0e4-48be-9cbd-f579a300942a.png)
 ![image](https://user-images.githubusercontent.com/67357603/221339031-f21ea02a-5505-4138-90dc-94a77f6226aa.png)
 
-In this case, all three amino acids are cyclical in nature. 
+In this case, all three amino acids have cyclical groups in them. 
 
 `model.get_nearest_neighbors("D")`, which returns 
 ```
